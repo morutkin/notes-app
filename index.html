@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+
+    </head>
+
+    <body>
+        <h1> Notes App</h1>
+        <!--easier to target with class and note -->
+        <!--'label' lets us interact with the text and the button -->
+        
+        <input id ="search-text" type="text" placeholder = "filter notes">
+        <select id="filter-by">
+            <option value="byEdited">sort by last edited</option>
+            <option value="byCreated">sort by recently created</option>
+            <option value="byAlphabet">sort alphabetically</option>
+
+        </select>
+
+       
+        
+        <div id="notes">
+
+        </div>
+        <button id="create">create note</button>
+        <!--script order matters, incase you are refering to var from 1st js in 2nd -->
+        <script src="uuid.js"></script>
+        <script src="notes-functions.js"></script>
+        <script src="notes-app.js"> </script> 
+    </body>
+     
+</html>
